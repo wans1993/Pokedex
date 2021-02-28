@@ -1,0 +1,258 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-normal {
+    background: linear-gradient(to top right,#A8A77A,#3d3d3d 25%);
+
+}
+.normal{
+ background-color: #A8A77A; 
+}
+
+.bg-fire {
+    background: linear-gradient(to top right,#EE8130,#3d3d3d 25%);
+
+}
+.fire{
+ background-color: #EE8130; 
+}
+
+.bg-water {
+    background: linear-gradient(to top right,#6390F0,#3d3d3d 25%);
+
+}
+.water{
+ background-color: #6390F0; 
+}
+
+.bg-electric {
+    background: linear-gradient(to top right,#F7D02C,#3d3d3d 25%);
+
+}
+.electric{
+ background-color: #F7D02C; 
+}
+
+.bg-grass {
+    background: linear-gradient(to top right,#7AC74C,#3d3d3d 25%);
+
+}
+.grass{
+ background-color: #7AC74C; 
+}
+
+.bg-ice {
+    background: linear-gradient(to top right,#96D9D6,#3d3d3d 25%);
+
+}
+.ice{
+ background-color: #96D9D6; 
+}
+
+.bg-fighting {
+    background: linear-gradient(to top right,#C22E28,#3d3d3d 25%);
+
+}
+.fighting{
+ background-color: #C22E28; 
+}
+
+.bg-poison {
+    background: linear-gradient(to top right,#A33EA1,#3d3d3d 25%);
+
+}
+.poison{
+ background-color: #A33EA1; 
+}
+
+.bg-ground {
+    background: linear-gradient(to top right,#E2BF65,#3d3d3d 25%);
+
+}
+.ground{
+ background-color: #E2BF65; 
+}
+
+.bg-flying {
+    background: linear-gradient(to top right,#A98FF3,#3d3d3d 25%);
+
+}
+.flying{
+ background-color: #A98FF3; 
+}
+
+.bg-psychic {
+    background: linear-gradient(to top right,#F95587,#3d3d3d 25%);
+
+}
+.psychic{
+ background-color: #F95587; 
+}
+
+.bg-bug {
+    background: linear-gradient(to top right,#A6B91A,#3d3d3d 25%);
+
+}
+.bug{
+ background-color: #A6B91A; 
+}
+
+.bg-rock {
+    background: linear-gradient(to top right,#B6A136,#3d3d3d 25%);
+
+}
+.rock{
+ background-color: #B6A136; 
+}
+
+.bg-ghost {
+    background: linear-gradient(to top right,#735797,#3d3d3d 25%);
+
+}
+.ghost{
+ background-color: #735797; 
+}
+
+.bg-dragon {
+    background: linear-gradient(to top right,#6F35FC,#3d3d3d 25%);
+
+}
+.dragon{
+ background-color: #6F35FC; 
+}
+
+.bg-dark {
+    background: linear-gradient(to top right,#705746,#3d3d3d 25%);
+
+}
+.dark{
+ background-color: #705746; 
+}
+
+.bg-steel {
+    background: linear-gradient(to top right,#B7B7CE,#3d3d3d 25%);
+
+}
+.steel{
+ background-color: #B7B7CE; 
+}
+
+.bg-fairy {
+    background: linear-gradient(to top right,#D685AD,#3d3d3d 25%);
+
+}
+.fairy{
+ background-color: #D685AD; 
+}
+
+
+body {
+    background-color: #1e1e1e;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+   
+    text-align: center;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.card .img {
+    margin: 40px auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-size: 400% 400%;
+    background-position: 0 0;
+    animation: bg-out 300ms ease-in forwards 1;
+}
+
+.card:hover .img {
+    animation: bg-in 300ms ease-in forwards 1;
+}
+
+.card .img img {
+    max-width: 220px;
+}
+
+.card .title h2 {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.card .type {
+    color: #1e1e1e;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+.card .type p {
+    margin: 0;
+}
+
+.card .favorite {
+    display: none;
+}
+
+@media screen and (max-width: 1244px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+
+@keyframes bg-in {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes bg-out {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
